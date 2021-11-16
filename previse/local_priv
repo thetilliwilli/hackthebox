@@ -1,0 +1,10 @@
+msf6 post(multi/recon/local_exploit_suggester) > run                                          
+                                                                                              
+[*] 10.10.11.104 - Collecting local exploits for x86/linux...                                 
+[*] 10.10.11.104 - 37 exploit checks are being tried...                                       
+[+] 10.10.11.104 - exploit/linux/local/nested_namespace_idmap_limit_priv_esc: The target appears to be vulnerable.                                                                           
+[+] 10.10.11.104 - exploit/linux/local/pkexec: The service is running, but could not be validated.                                                                                           
+[+] 10.10.11.104 - exploit/linux/local/su_login: The target appears to be vulnerable.                                                                                                        
+[*] Post module execution completed
+
+

