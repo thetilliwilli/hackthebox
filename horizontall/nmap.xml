@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Thu Dec  9 23:37:15 2021 as: nmap -v -sV -sC -oA nmap -p- -T4 10.10.11.105 -->
+<nmaprun scanner="nmap" args="nmap -v -sV -sC -oA nmap -p- -T4 10.10.11.105" start="1639082235" startstr="Thu Dec  9 23:37:15 2021" version="7.91" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1639082236"/>
+<taskend task="NSE" time="1639082236"/>
+<taskbegin task="NSE" time="1639082236"/>
+<taskend task="NSE" time="1639082236"/>
+<taskbegin task="NSE" time="1639082236"/>
+<taskend task="NSE" time="1639082236"/>
+<taskbegin task="Ping Scan" time="1639082236"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.11.105" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="Ping Scan" time="1639082236" extrainfo="1 total hosts"/>
+<taskbegin task="SYN Stealth Scan" time="1639082236"/>
+<taskprogress task="SYN Stealth Scan" time="1639082267" percent="21.45" remaining="114" etc="1639082381"/>
+<taskprogress task="SYN Stealth Scan" time="1639082297" percent="42.08" remaining="84" etc="1639082381"/>
+<taskprogress task="SYN Stealth Scan" time="1639082327" percent="64.64" remaining="50" etc="1639082377"/>
+<taskend task="SYN Stealth Scan" time="1639082383" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1639082383"/>
+<taskend task="Service scan" time="1639082390" extrainfo="2 services on 1 host"/>
+<taskbegin task="NSE" time="1639082390"/>
+<taskend task="NSE" time="1639082393"/>
+<taskbegin task="NSE" time="1639082393"/>
+<taskend task="NSE" time="1639082393"/>
+<taskbegin task="NSE" time="1639082393"/>
+<taskend task="NSE" time="1639082393"/>
+<host starttime="1639082236" endtime="1639082393"><status state="up" reason="reset" reason_ttl="63"/>
+<address addr="10.10.11.105" addrtype="ipv4"/>
+<hostnames>
+<hostname name="horizontall.htb" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="65533">
+<extrareasons reason="resets" count="65533"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" product="OpenSSH" version="7.6p1 Ubuntu 4ubuntu0.5" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.6p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 ee:77:41:43:d4:82:bd:3e:6e:6e:50:cd:ff:6b:0d:d5 (RSA)&#xa;  256 3a:d5:89:d5:da:95:59:d9:df:01:68:37:ca:d5:10:b0 (ECDSA)&#xa;  256 4a:00:04:b4:9d:29:e7:af:37:16:1b:4f:80:2d:98:94 (ED25519)"><table>
+<elem key="bits">2048</elem>
+<elem key="fingerprint">ee774143d482bd3e6e6e50cdff6b0dd5</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDL2qJTqj1aoxBGb8yWIN4UJwFs4/UgDEutp3aiL2/6yV2iE78YjGzfU74VKlTRvJZWBwDmIOosOBNl9nfmEzXerD0g5lD5SporBx06eWX/XP2sQSEKbsqkr7Qb4ncvU8CvDR6yGHxmBT8WGgaQsA2ViVjiqAdlUDmLoT2qA3GeLBQgS41e+TysTpzWlY7z/rf/u0uj/C3kbixSB/upkWoqGyorDtFoaGGvWet/q7j5Tq061MaR6cM2CrYcQxxnPy4LqFE3MouLklBXfmNovryI0qVFMki7Cc3hfXz6BmKppCzMUPs8VgtNgdcGywIU/Nq1aiGQfATneqDD2GBXLjzV</elem>
+<elem key="type">ssh-rsa</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="fingerprint">3ad589d5da9559d9df016837cad510b0</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBIyw6WbPVzY28EbBOZ4zWcikpu/CPcklbTUwvrPou4dCG4koataOo/RDg4MJuQP+sR937/ugmINBJNsYC8F7jN0=</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="fingerprint">4a0004b49d29e7af37161b4f802d9894</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIJqmDVbv9RjhlUzOMmw3SrGPaiDBgdZ9QZ2cKM49jzYB</elem>
+<elem key="type">ssh-ed25519</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="nginx" version="1.14.0" extrainfo="Ubuntu" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.14.0</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="http-favicon" output="Unknown favicon MD5: 1BA2AE710D927F13D483FD5D1E548C9B"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+</table>
+</script><script id="http-server-header" output="nginx/1.14.0 (Ubuntu)"><elem>nginx/1.14.0 (Ubuntu)</elem>
+</script><script id="http-title" output="horizontall"><elem key="title">horizontall</elem>
+</script></port>
+</ports>
+<times srtt="109317" rttvar="269" to="110393"/>
+</host>
+<taskbegin task="NSE" time="1639082393"/>
+<taskend task="NSE" time="1639082393"/>
+<taskbegin task="NSE" time="1639082393"/>
+<taskend task="NSE" time="1639082393"/>
+<taskbegin task="NSE" time="1639082393"/>
+<taskend task="NSE" time="1639082393"/>
+<runstats><finished time="1639082393" timestr="Thu Dec  9 23:39:53 2021" summary="Nmap done at Thu Dec  9 23:39:53 2021; 1 IP address (1 host up) scanned in 158.05 seconds" elapsed="158.05" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

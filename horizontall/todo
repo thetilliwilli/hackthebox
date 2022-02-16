@@ -1,0 +1,9 @@
+посомтреть какие порты еще открыты
+
+check Sudo version 1.8.21p2
+check env variables by pm2
+"username": "${process.env.DATABASE_USERNAME || ''}",   
+"password": "${process.env.DATABASE_PASSWORD || ''}",
+
+
+
