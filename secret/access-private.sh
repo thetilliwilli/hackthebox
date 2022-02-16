@@ -1,0 +1,2 @@
+#!/bin/bash
+curl -XGET -H'auth-token : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWM0N2E2NWJmMjY0YzA0NWY1ODg2NGUiLCJuYW1lIjoidGlsbGl3aWxsaTMiLCJlbWFpbCI6InRpbGxpQHdpbGxpLmdtYWlsIiwiaWF0IjoxNjQwMjY2Njk5fQ.YhNLjtHC0RLy4xqryI6cVdYR-h_U6ZWjeNBn5WwQA7E' http://10.10.11.120/api/priv
