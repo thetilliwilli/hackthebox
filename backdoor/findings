@@ -1,0 +1,45 @@
+http://backdoor.htb/index.php/feed/atom/
+выдает 
+<entry>
+		<author>
+			<name>admin</name>
+							<uri>http://backdoor.htb</uri>
+						</author>
+
+		<title type="html"><![CDATA[Hello world!]]></title>
+		<link rel="alternate" type="text/html" href="http://backdoor.htb/index.php/2021/07/24/hello-world/" />
+
+		<id>http://backdoor.htb/?p=1</id>
+		<updated>2021-07-24T13:19:11Z</updated>
+		<published>2021-07-24T13:19:11Z</published>
+		<category scheme="http://backdoor.htb" term="Uncategorized" />
+		<summary type="html"><![CDATA[Welcome to WordPress. This is your first post. Edit or delete it, then start writing!]]></summary>
+
+					<content type="html" xml:base="http://backdoor.htb/index.php/2021/07/24/hello-world/"><![CDATA[
+<p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>
+]]></content>
+		
+					<link rel="replies" type="text/html" href="http://backdoor.htb/index.php/2021/07/24/hello-world/#comments" thr:count="1" />
+			<link rel="replies" type="application/atom+xml" href="http://backdoor.htb/index.php/2021/07/24/hello-world/feed/atom/" thr:count="1" />
+			<thr:total>1</thr:total>
+			</entry>
+
+XML entity injection possible
+
+
+https://book.hacktricks.xyz/pentesting/pentesting-web/wordpress#wp-cron.php-dos
+
+еще раз прогнать 
+gobuster dir -w /usr/share/seclists/Discovery/Web-Content/raft-small-directories-lowercase.txt -u http://backdoor.htb/index.php -o gobuster-index.php
+start from 
+
+http://backdoor.htb/wp-includes/
+
+https://blog.0x3a.com/post/114659871819/thousands-of-compromised-wordpress-websites
+
+
+if get valid cookie for admin aka comment_author_email_20a548719889fdc7d2033c3fb1e283b1=ttttt%40ttttt.com -> then attack vector
+
+http://10.10.11.125/wp-includes/wlwmanifest.xml
+
+попробовать просканировать на уязвимости с помощью https://github.com/projectdiscovery/nuclei-templates wordpress templates

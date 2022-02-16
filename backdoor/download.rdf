@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><rdf:RDF
+	xmlns="http://purl.org/rss/1.0/"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:admin="http://webns.net/mvcb/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	>
+<channel rdf:about="http://backdoor.htb">
+	<title>Backdoor</title>
+	<link>http://backdoor.htb</link>
+	<description>Real-Life</description>
+	<dc:date>2021-07-24T13:19:11Z	</dc:date>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<sy:updateBase>2000-01-01T12:00+00:00</sy:updateBase>
+	<admin:generatorAgent rdf:resource="https://wordpress.org/?v=5.8.1" />
+	<items>
+		<rdf:Seq>
+					<rdf:li rdf:resource="http://backdoor.htb/index.php/2021/07/24/hello-world/"/>
+				</rdf:Seq>
+	</items>
+</channel>
+<item rdf:about="http://backdoor.htb/index.php/2021/07/24/hello-world/">
+	<title>Hello world!</title>
+	<link>http://backdoor.htb/index.php/2021/07/24/hello-world/</link>
+
+	<dc:creator><![CDATA[admin]]></dc:creator>
+	<dc:date>2021-07-24T13:19:11Z</dc:date>
+			<dc:subject><![CDATA[Uncategorized]]></dc:subject>
+
+			<description><![CDATA[Welcome to WordPress. This is your first post. Edit or delete it, then start writing!]]></description>
+		<content:encoded><![CDATA[
+<p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>
+]]></content:encoded>
+	
+	</item>
+</rdf:RDF>
