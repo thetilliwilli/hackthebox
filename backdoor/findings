@@ -43,3 +43,19 @@ if get valid cookie for admin aka comment_author_email_20a548719889fdc7d2033c3fb
 http://10.10.11.125/wp-includes/wlwmanifest.xml
 
 попробовать просканировать на уязвимости с помощью https://github.com/projectdiscovery/nuclei-templates wordpress templates
+
+sqlmap
+
+Link: <http://backdoor.htb/index.php/wp-json/wp/v2/pages/11>; rel="alternate"; type="application/json"
+
+MQYBJSaD#DxG6qbm
+
+inside wp-config there is such constants - what if i can generate admin cookie\credentials with it
+define( 'AUTH_KEY',         'put your unique phrase here' );
+define( 'SECURE_AUTH_KEY',  'put your unique phrase here' );
+define( 'LOGGED_IN_KEY',    'put your unique phrase here' );
+define( 'NONCE_KEY',        'put your unique phrase here' );
+define( 'AUTH_SALT',        'put your unique phrase here' );
+define( 'SECURE_AUTH_SALT', 'put your unique phrase here' );
+define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
+define( 'NONCE_SALT',       'put your unique phrase here' );
